@@ -11,7 +11,7 @@ pipeline {
               sh 'Javac Hello.java'
        }
     }
-         stage('run){
+         stage('run'){
               steps{
                 sh 'Java Hello'
        }
