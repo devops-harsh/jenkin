@@ -8,12 +8,12 @@ pipeline {
     stages {
 	stage('compile'){
            steps {
-              sh 'Javac Hello.java'
+              sh 'javac Hello.java'
        }
     }
          stage('run'){
               steps{
-                sh 'Java Hello'
+                sh 'java Hello'
        }
     }
   } 
