@@ -13,12 +13,12 @@ pipeline {
          }
 	stage('compile'){
            steps {
-              sh 'javac Hello.java'
+              sh 'javac ci-cd-test/Hello.java'
        }
     }
          stage('run'){
               steps{
-                sh 'java Hello'
+                sh 'java -cp ci-cd-test  Hello'
        }
     }
   } 
