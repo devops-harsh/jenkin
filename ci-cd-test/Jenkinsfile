@@ -6,6 +6,11 @@ pipeline {
         }
   
     stages {
+        stage('debug'){
+            steps {
+               sh 'ls -la'
+             }
+         }
 	stage('compile'){
            steps {
               sh 'javac Hello.java'
